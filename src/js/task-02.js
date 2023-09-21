@@ -17,4 +17,7 @@ const marcup = ingredients.map(
   }
 )
  container.append(...marcup);
-console.dir(container.outerHTML);
+console.dir(container);
+
+
+
