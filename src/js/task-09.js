@@ -1,26 +1,22 @@
+const bodyColor = document.querySelector('body');
+const spanText = document.querySelector('.color')
+const btnChange = document.querySelector('.change-color');
+
+
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`;
+  
+}
+ 
+const clbck = () => {
+  bodyColor.style.backgroundColor = getRandomHexColor();
+  // spanText = bodyColor.style.backgroundColor;
+  spanText.textContent = bodyColor.style.backgroundColor
 }
 
 
 
-// ## Завдання 9
-
-// Напиши скрипт, який змінює кольори фону елемента `<body>` через інлайн-стиль  по кліку на `button.change-color` і виводить значення кольору в `span.color`.
-
-// ```html
-// <div class="widget">
-//   <p>Background color: <span class="color">-</span></p>
-//   <button type="button" class="change-color">Change color</button>
-// </div>
-// ```
-
-// Для генерування випадкового кольору використовуй функцію `getRandomHexColor`.
-
-// ```js
-// function getRandomHexColor() {
-//   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-// }
-// ```
+bodyColor.addEventListener('click', clbck);
+console.log(bodyColor);

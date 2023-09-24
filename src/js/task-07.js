@@ -5,4 +5,4 @@ const clbck = () => {
     spanText.style.fontSize = inputSize.value+'px';
 }
 
-inputSize.addEventListener('input', clbck);
+inputSize.addEventListener('input', clbck); 
