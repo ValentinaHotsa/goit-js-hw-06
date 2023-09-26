@@ -12,7 +12,7 @@ function getRandomHexColor() {
  
 const clbck = () => {
   bodyColor.style.backgroundColor = getRandomHexColor();
-  // spanText = bodyColor.style.backgroundColor;
+
   spanText.textContent = bodyColor.style.backgroundColor
 }
 
