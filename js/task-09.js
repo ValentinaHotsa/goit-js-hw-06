@@ -20,3 +20,4 @@ const clbck = () => {
 
 bodyColor.addEventListener('click', clbck);
 console.log(bodyColor);
+ 
